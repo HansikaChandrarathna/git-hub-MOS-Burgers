@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(../assets/images/signup4.jpg);
+    background-size: 100% 740px;
+    opacity: 0.8;
+}
+
+.showcase-top img {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    z-index: 5;
+}
+
+.showcase-top img {
+    top: 0;
+    left: 3%;
+    transform: translate(0);
+}
+
+.contain {
+    width: 450px;
+    height: 550px;
+    text-align: center;
+    color: black;
+    margin-left: 36%;
+    margin-top: 4%;
+    background-color: white;
+    border-radius: 8PX;
+    z-index: 4;
+}
+
+.contain .text {
+    position: relative;
+    top: 7%;
+}
+
+.inp {
+    border: none;
+    background-color: white;
+    border-bottom: 2px solid black;
+    width: 300px;
+    font-size: 16px;
+    margin-top: 40px;
+    outline: none;
+    color: black;
+}
+
+
+
+.text button {
+    width: 300px;
+    height: 44px;
+    background-color: rgb(202, 32, 32);
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 18px;
+    margin-top: 100px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+
+}
+
+button:hover {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(7, 7, 38);
+
+}
+
+p {
+    padding-top: 40px;
+    font-size: 16px;
+}
+
+p span {
+    color: rgb(202, 32, 32);
+    cursor: pointer;
+}
+
+p span a {
+    text-decoration: none;
+    color: rgb(202, 32, 32);
+}

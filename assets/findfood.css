@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.showcase {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    background-color: #a2e4a1;
+    z-index: 2;
+
+}
+
+
+.showcase-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 22%;
+    z-index: 2;
+    background: url(../assets/images/ORDERS.png)no-repeat center center/cover;
+}
+
+.showcase-top img {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    z-index: 2;
+}
+
+.showcase-top h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1;
+    padding-left: 42%;
+    padding-top: 6%;
+    color: white;
+
+}
+
+
+.checkout {
+    width: 800px;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: white;
+    padding: 7px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 3;
+
+}
+
+.checkout-top {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    width: 100%;
+    height: 14%;
+    z-index: 3;
+}
+
+#logo-checkout {
+    width: 80px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+
+.checkout .checkout-top span {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    right: 3px;
+    font-size: 30px;
+    font-weight: bolder;
+    transform: translate(0, -50%);
+    z-index: 3;
+    cursor: pointer;
+    color: black;
+}
+
+.checkout .checkout-top span:hover {
+    color: red;
+
+}
+
+
+#order-now-button {
+    height: 40px;
+    position: absolute;
+    bottom: 8%;
+    right: 10%;
+    left: 10%;
+    transform: translate(0, 50%);
+    z-index: 4;
+    background-color: #229826;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 90px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    position: absolute;
+
+}
+
+#order-now-button:hover {
+    color: white;
+    background-color: rgb(8, 70, 23);
+
+}
+
+.order-confirmation {
+    width: 400px;
+    height: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: white;
+    padding: 7px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.6);
+    z-index: 4;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.confirmation-top {
+    width: 100%;
+    height: 14%;
+    z-index: 4;
+
+}
+
+#tick {
+    width: 80px;
+    margin-top: -40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+}
+
+.confirmation-content {
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+
+.confirmation-content p {
+    padding-top: 22px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.confirmation-content p span {
+    line-height: 70px;
+
+}
+
+.confirmation-content h2 {
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+#ok-button {
+    margin-bottom: 45px;
+    margin-top: 30px;
+    width: 120px;
+    background-color: #6fd649;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+
+@media(max-width: 960px) {
+    .showcase {
+        height: 100vh;
+    }
+}
+
+
+.showcase-top img {
+    top: 2%;
+    left: 3%;
+    transform: translate(0);
+}
+
+#logo-checkout {
+    top: 0;
+    left: 1%;
+    transform: translate(0);
+}
+
+
+
+.showcase-content-links {
+    position: absolute;
+    margin-left: 5px;
+    right: 0;
+    float: left;
+    margin-top: 10%;
+    transform: translate(-20%, 60%);
+}
+
+
+.showcase-content-links ul li {
+    padding: 0 40px;
+    display: inline-block;
+    border-right: 1px solid black;
+    position: relative;
+    list-style: none;
+}
+
+.showcase-content-links ul li:last-child {
+    border: 0;
+}
+
+.showcase-content-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 550;
+    position: relative;
+    font-size: 14px;
+
+}
+
+
+.showcase-content-links ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.showcase-content-links ul li a:hover::after {
+    width: 100%;
+    cursor: pointer;
+}
+
+#cart {
+    width: 100px;
+    position: absolute;
+    transform: translate(40%, -15%);
+    z-index: 5;
+}
